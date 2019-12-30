@@ -1,0 +1,49 @@
+{
+  "_from": "webix@^6.2.1",
+  "_id": "webix@6.3.1",
+  "_inBundle": false,
+  "_integrity": "sha512-RvQO8dY4Wy9u2JnlU6sRs6y8xezTlo6wETMDqoobpBMMERjhjYDaYzPUUPnY972bJ4sxAUHZGkeUE7Ju7qLJfQ==",
+  "_location": "/webix",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "webix@^6.2.1",
+    "name": "webix",
+    "escapedName": "webix",
+    "rawSpec": "^6.2.1",
+    "saveSpec": null,
+    "fetchSpec": "^6.2.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/webix/-/webix-6.3.1.tgz",
+  "_shasum": "44374cdbb7b439ff5c9938c1f8a565948410b36e",
+  "_spec": "webix@^6.2.1",
+  "_where": "C:\\NodeJS\\Apps\\SPA-Srv\\ui",
+  "author": {
+    "name": "XB Software"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Webix UI",
+  "keywords": [
+    "webix",
+    "ui",
+    "tree",
+    "datatable",
+    "list",
+    "chart",
+    "form",
+    "grid"
+  ],
+  "license": "SEE LICENSE IN license.text",
+  "main": "webix.js",
+  "name": "webix",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "types/webix.d.ts",
+  "version": "6.3.1"
+}
