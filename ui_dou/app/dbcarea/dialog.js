@@ -1,5 +1,5 @@
 const LinkContragent = (conf)=>{
-    console.log(conf)
+    //console.log(conf)
     const phone = (()=>{
         let p = [];
         let c = 0;
@@ -14,6 +14,12 @@ const LinkContragent = (conf)=>{
     })()
     return  [ 
         { view:"textarea", label:"Организация", labelWidth:150, height:75, name:"FullName"},
+        { view:"fieldset", label:"Реквизиты", body:{
+            rows:[
+                { view:"text", label:"Фамилия И.О", labelWidth:150, name:"LinkContragentBoss.FullName"},
+                { view:"text", label:"Должность", labelWidth:150, name:"LinkContragentBoss.FullPost"},
+                { view:"text", label:"На основании", labelWidth:150, name:"LinkContragentBoss.ДействуетНаОсновании"}
+              ]}},
         { view:"fieldset", label:"Связь", body:{
             rows:[
                 { view:"text", label:"Email", labelWidth:150, name:"Email"},
@@ -33,9 +39,9 @@ const LinkContragent = (conf)=>{
 
 const LinkContragentBoss = (conf)=>{
     return  [ 
-        { view:"text", label:"Фамилия И.О", labelWidth:150, name:"LinkContragentBoss.FullName"},
-        { view:"text", label:"Должность", labelWidth:150, name:"LinkContragentBoss.FullPost"},
-        { view:"text", label:"На основании", labelWidth:150, name:"LinkContragentBoss.ДействуетНаОсновании"}
+        { view:"text", label:"Фамилия И.О", labelWidth:150, name:"FullName"},
+        { view:"text", label:"Должность", labelWidth:150, name:"FullPost"},
+        { view:"text", label:"На основании", labelWidth:150, name:"ДействуетНаОсновании"}
 
     ]
 }

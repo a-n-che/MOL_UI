@@ -40,7 +40,7 @@ class Cabinet extends mForm{
       }
       d.LinkContragent.Phone = p   
     }
-    console.log(d.LinkContragent.Phone)
+    //console.log(d.LinkContragent.Phone)
 
     const frm = [
         {
@@ -58,13 +58,13 @@ class Cabinet extends mForm{
                 rows: [
                 { view:"mTextLabel", label:"Организация", value: d.LinkContragent.FullName,border:1},
                 {height:10},
-                { view:"fieldset", label:"Руководитель <span class='webix_icon wxi-pencil' style='color:blue'></span>", body:{
+                { view:"fieldset", label:"Руководитель <span id='bossDBox' class='webix_icon wxi-pencil'></span>", body:{ //style='color:blue'
                   rows:[
                       { view:"mTextLabel", label:"Фамилия И.О", value: d.LinkContragentBoss.FullName},
                       { view:"mTextLabel", label:"Должность", value: d.LinkContragentBoss.FullPost,borderless:true},
                       { view:"mTextLabel", label:"На основании", value: d.LinkContragentBoss.ДействуетНаОсновании,borderless:true}
                     ]}},
-                { view:"fieldset", label:"Юридический адрес <span class='webix_icon wxi-pencil' style='color:red'></span>", body:{
+                { view:"fieldset", label:"Юридический адрес <span id='lawAddrDBox' class='webix_icon wxi-pencil'></span>", body:{
                   rows:[
                     { view:"mTextLabel", label:"Индекс", value: d.LinkContragent.Address.Юридический.Индекс},
                     { view:"mTextLabel", label:"Страна", value: d.LinkContragent.Address.Юридический.Страна},
@@ -72,18 +72,18 @@ class Cabinet extends mForm{
                     { view:"mTextLabel", label:"Город", value: d.LinkContragent.Address.Юридический.Город},
                     { view:"mTextLabel", label:"Улица", value: d.LinkContragent.Address.Юридический.Улица}
                   ]}},
-                { view:"fieldset", label:"Связь <span class='webix_icon wxi-pencil' style='color:green'></span>", body:{
+                { view:"fieldset", label:"Связь <span id='connectDBox' class='webix_icon wxi-pencil'></span>", body:{
                   rows:[
                       { view:"mTextLabel", label:"Email", value: d.LinkContragent.Email},
                       { view:"mTextLabel", label:"Телефон", value: d.LinkContragent.Phone.Секретарь},
                     ]}},
-                { view:"fieldset", label:"Реквизиты <span class='webix_icon wxi-pencil'></span>", body:{
+                { view:"fieldset", label:"Реквизиты <span id='rekDBox'class='webix_icon wxi-pencil'></span>", body:{
                   rows:[
                        { view:"mTextLabel", label:"ИНН", value: d.LinkContragent.INN},
                        { view:"mTextLabel", label:"КПП", value: d.LinkContragent.KPP},
                        { view:"mTextLabel", label:"ОГРН", value: d.LinkContragent.OGRN}
                      ]}},  
-                { view:"fieldset", label:"Банк <span class='webix_icon wxi-pencil'></span>", body:{
+                { view:"fieldset", label:"Банк <span id='bankDBox'class='webix_icon wxi-pencil'></span>", body:{
                   rows:[
                         { view:"mTextLabel", label:"FaceAccount", value: d.LinkContragentBank.FaceAccount},
                         { view:"mTextLabel", label:"Operator", value: d.LinkContragentBank.Operator},
